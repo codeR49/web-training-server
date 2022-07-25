@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "overview": {
+      "type": "richtext",
+      "required": true,
+      "unique": false
+    },
+    "curriculum": {
+      "type": "richtext",
+      "required": true,
+      "unique": true
+    },
+    "fees": {
+      "type": "string",
+      "required": true
+    },
+    "faqs": {
+      "type": "richtext",
+      "required": true,
+      "unique": true
+    },
+    "certImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "calendar": {
+      "type": "json",
+      "required": true
+    },
+    "bgImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

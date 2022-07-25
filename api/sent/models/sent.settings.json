@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sents",
+  "info": {
+    "name": "sent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "integer",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "trainingfor": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
