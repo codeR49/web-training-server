@@ -31,6 +31,10 @@
     "trainingfor": {
       "type": "json",
       "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
     }
   }
 }
