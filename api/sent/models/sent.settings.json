@@ -26,7 +26,7 @@
     },
     "message": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "trainingfor": {
       "type": "json",

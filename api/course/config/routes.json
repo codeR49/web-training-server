@@ -40,7 +40,14 @@
         "policies": []
       }
     },
-    
+    {
+      "method": "POST",
+      "path": "/courses/bytitle",
+      "handler": "course.title",
+      "config": {
+        "policies": []
+      }
+    },
     {
       "method": "PUT",
       "path": "/courses/:id",

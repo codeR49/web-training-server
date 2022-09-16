@@ -19,27 +19,27 @@
     },
     "description": {
       "type": "text",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "overview": {
       "type": "richtext",
-      "required": true,
+      "required": false,
       "unique": false
     },
     "curriculum": {
       "type": "richtext",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "fees": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "faqs": {
       "type": "richtext",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "certImage": {
       "model": "file",
@@ -48,12 +48,12 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "calendar": {
       "type": "json",
-      "required": true
+      "required": false
     },
     "bgImage": {
       "model": "file",
@@ -62,7 +62,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     }
   }
