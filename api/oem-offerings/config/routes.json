@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oem-offerings",
+      "handler": "oem-offerings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oem-offerings/count",
+      "handler": "oem-offerings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oem-offerings/:id",
+      "handler": "oem-offerings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oem-offerings",
+      "handler": "oem-offerings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oem-offerings/:id",
+      "handler": "oem-offerings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oem-offerings/:id",
+      "handler": "oem-offerings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

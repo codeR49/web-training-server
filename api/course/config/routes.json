@@ -33,6 +33,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/all",
+      "handler": "course.findAll",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/courses",
       "handler": "course.create",

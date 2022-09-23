@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "courses",
+  "collectionName": "oem_offerings",
   "info": {
-    "name": "course",
+    "name": "OemOfferings",
     "description": ""
   },
   "options": {
@@ -19,41 +19,8 @@
     },
     "description": {
       "type": "text",
-      "required": false,
+      "required": true,
       "unique": false
-    },
-    "overview": {
-      "type": "richtext",
-      "required": false,
-      "unique": false
-    },
-    "curriculum": {
-      "type": "richtext",
-      "required": false,
-      "unique": false
-    },
-    "fees": {
-      "type": "string",
-      "required": false
-    },
-    "faqs": {
-      "type": "richtext",
-      "required": false,
-      "unique": false
-    },
-    "certImage": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "calendar": {
-      "type": "json",
-      "required": false
     },
     "bgImage": {
       "model": "file",
@@ -62,12 +29,18 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
-    "certification": {
-      "via": "courses",
-      "model": "certifications"
+    "certImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }

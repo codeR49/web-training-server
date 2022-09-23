@@ -27,6 +27,19 @@ module.exports = {
 
         await strapi.services.course.create(body);
         ctx.send({ message: 'Courses saved to db' });
+    },
+    async findAll(ctx) {
+
+        let entities;
+        ctx.query = {
+            ...ctx.query,
+            _limit: -1,
+          };
+
+        entities = await strapi.query('course').model.find({});
+
+        return entities;
+
     }
     //     async title(ctx) {
     //         let courseName = [
