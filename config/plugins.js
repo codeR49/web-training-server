@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
       },
     },
     settings: {
-      defaultFrom: `Strapi Backend Alchemy ${process.env.EMAIL_ADDRESS_FROM}`,
+      defaultFrom: `support Alchemy Solutions ${process.env.EMAIL_ADDRESS_FROM}`,
       defaultReplyTo: process.env.EMAIL_ADDRESS_REPLY,
     },
   }

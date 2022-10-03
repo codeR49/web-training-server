@@ -64,10 +64,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "certification": {
-      "via": "courses",
-      "model": "certifications"
     }
   }
 }

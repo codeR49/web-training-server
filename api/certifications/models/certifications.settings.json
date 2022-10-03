@@ -41,9 +41,9 @@
       "required": true,
       "pluginOptions": {}
     },
-    "courses": {
-      "collection": "course",
-      "via": "certification"
+    "listofcertificate": {
+      "type": "json",
+      "required": true
     }
   }
 }
